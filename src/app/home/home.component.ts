@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FoodService } from '../services/food/food.service';
+import { foodInfomation } from '../shared/models/foodInformation';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { FoodService } from '../services/food/food.service';
 })
 export class HomeComponent {
 
-  images:string[] = [] ;
+  images:foodInfomation [] = [] ;
 
   constructor(private foodimages:FoodService){
     // console.log(foodimages.getAllFoodImages())

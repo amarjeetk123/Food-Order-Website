@@ -1,5 +1,7 @@
 <ul>
     <li *ngFor="let i of images" >
-       <a href="#"> <img src="{{i}}" alt="food-image"></a>
+       <a href="#"> <img src="{{i.imageUrl}}" alt="food-image">
+        {{i.name}}
+    </a>
     </li>
 </ul>
