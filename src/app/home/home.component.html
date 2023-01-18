@@ -1,7 +1,19 @@
 <ul>
-    <li *ngFor="let i of images" >
-       <a href="#"> <img src="{{i.imageUrl}}" alt="food-image">
-        {{i.name}}
-    </a>
+    <li *ngFor="let i of images">
+        <a href="#"> <img src="{{i.imageUrl}}" alt="food-image">
+            <h2 class="rating"> {{i.rating}} <i class="fa-regular fa-star"></i> </h2>
+            <div class="information">
+                <div style="display: flex;justify-content: space-between;align-items: center;">
+                    <h4 class="name">{{i.name}}</h4>
+                    <span class="favorate {{i.favorate ? 'yes' : 'not' }}"> ♥ </span> <!-- by click alt+3 we can use this herat shape -->
+                  
+                </div>
+                <div style="display: flex;justify-content: space-between;align-items: center;">
+                    <h1 class="tags"> {{i.tags}} </h1>
+                    <h2 class="cooktime"> <i class="fa-regular fa-clock"></i> {{i.cookTime}} </h2>
+                </div>
+                <h2 class="price"> <i class="fa-solid fa-indian-rupee-sign"></i> {{i.price}} for one </h2>
+            </div>
+        </a>
     </li>
 </ul>

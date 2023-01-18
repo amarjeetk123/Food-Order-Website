@@ -1,23 +1,74 @@
-ul{
+ul {
     display: flex;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 ul li {
-  width: 300px;
-  height: 300px;
+    width: 380px;
+    height: 410px;
     border: 1px solid rgb(233, 220, 220);
     margin: 0.5rem;
     border-radius: 10px;
+    position: relative;
 }
-ul li:hover{
+
+ul li:hover {
     opacity: 0.9;
 }
+
 a img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 80%;
+    border-radius: 8px;
+    height: 70%;
     width: 100%;
+}
+
+.favorate.not {
+    color: black;
+}
+
+.favorate.yes {
+    color: red;
+}
+
+.favorate {
+    font-size: 30px;
+}
+
+/* .favorate:hover{
+    color: green;
+} */
+.rating {
+    padding: 2px 5px 3px 5px;
+    position: absolute;
+    margin-top: -38px;
+    right: 10px;
+    color: #fff;
+    background-color: rgb(18, 182, 18);
+    border-radius: 8px;
+    font-size: 19px;
+}
+
+.information {
+    padding: 5px 6px;
+}
+
+.information .name {
+    font-size: 23px;
+    color: #000000;
+}
+
+.tags,
+.cooktime {
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+}
+.price{
+    font-size: 19px;
+    color: #000000;
+    font-weight: lighter;
 }
